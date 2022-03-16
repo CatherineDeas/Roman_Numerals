@@ -1,7 +1,11 @@
 class Roman
 
     def convert_to_number(string)
-        return string.size
+        if string.include?("V")
+            return (string.size)*5
+        else
+            return string.size
+        end
     end
     
 end

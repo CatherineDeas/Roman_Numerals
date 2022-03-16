@@ -17,4 +17,12 @@ describe 'roman numerals' do
         expect(@roman.convert_to_number("II")).to eq(2)
     end
 
+    it 'returns 5 when given "V"' do
+        expect(@roman.convert_to_number("V")).to eq(5)
+    end
+
+    it 'returns 10 when given "VV"' do
+        expect(@roman.convert_to_number("VV")).to eq(10)
+        end
+
 end
