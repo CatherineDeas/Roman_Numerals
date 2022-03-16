@@ -1,10 +1,8 @@
 class Roman
 
     def convert_to_number(string)
-        if string == "VI"
-            return 6
-        elsif string == "VII"
-            return 7
+        if string.include?("V") && string.include?("I")
+            return 5 + string.count("I")
         elsif string.include?("V")
             return (string.size)*5
         else
