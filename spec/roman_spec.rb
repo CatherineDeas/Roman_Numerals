@@ -23,6 +23,14 @@ describe 'roman numerals' do
 
     it 'returns 10 when given "VV"' do
         expect(@roman.convert_to_number("VV")).to eq(10)
-        end
+    end
+
+    it 'returns 6 when given "VI"' do
+        expect(@roman.convert_to_number("VI")).to eq(6)
+    end
+
+    it 'returns 7 when given "VII"' do
+        expect(@roman.convert_to_number("VII")).to eq(7)
+    end
 
 end
