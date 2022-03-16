@@ -33,4 +33,12 @@ describe 'roman numerals' do
         expect(@roman.convert_to_number("VII")).to eq(7)
     end
 
+    it 'returns 10 when given "X"' do
+        expect(@roman.convert_to_number("X")).to eq(10)
+    end
+
+    it 'returns 11 when given "XI"' do
+        expect(@roman.convert_to_number("XI")).to eq(11)
+    end
+
 end
